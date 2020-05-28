@@ -1,0 +1,11 @@
+@use 'variables';
+
+// Different properties for headings
+h1 {
+    margin-bottom: 0;
+}
+
+h2 {
+    text-decoration: underline;
+    text-decoration-color: variables.$muted-text;
+}

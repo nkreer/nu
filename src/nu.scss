@@ -1,5 +1,8 @@
 // Import features
 @use 'variables';
+@use 'headings';
+
+// This file does all major positioning work and bootstrapping the site for further components
 
 body, header, article, footer {
     margin-top: variables.$top-margin;
@@ -13,10 +16,25 @@ body, header, article, footer {
     color: variables.$foreground-color-text;
 }
 
-article {
-    line-height: 1.5em;
+// Some components should be visually separated from the rest of the page
+code, div {
+    // Separation by color
+    background-color: variables.$separated-content-background;
+    
+    // Specify that it takes the entire width of the page
+    display: block;
+    width: 100%;
+
+    // Spacing also separates
+    padding: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+    // Apply a shadow for further separation if just the color is not sufficient for a user
+    box-shadow: variables.$shadows;
 }
 
-h1 {
-    margin-bottom: 0;
+// Main content needs bigger line height for easier reading
+article {
+    line-height: 1.5em;
 }
