@@ -1,15 +1,20 @@
 // Import features
 @use 'variables';
 @use 'headings';
+@use 'controls';
 
 // This file does all major positioning work and bootstrapping the site for further components
 
 body, header, article, footer {
+    // Spacing
     margin-top: variables.$top-margin;
     margin-bottom: variables.$bottom-margin;
     margin-left: 5%;
     margin-right: 5%;
+
+    // Font setup
     font: 100% variables.$basic-fonts;
+    font-size: variables.$font-size;
 
     // Color settings
     background-color: variables.$background-color;
@@ -32,6 +37,9 @@ code, div {
 
     // Apply a shadow for further separation if just the color is not sufficient for a user
     box-shadow: variables.$shadows;
+
+    // Also apply fonts
+    font-size: variables.$font-size;
 }
 
 // Main content needs bigger line height for easier reading

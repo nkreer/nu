@@ -1,5 +1,7 @@
 # nu
 
-nu is a classlass CSS framework. Its focus is maximum simplicity and accessibility.
+Is it a classless, accessible and simplistic CSS framework? [Nu nu.](https://de.wikipedia.org/wiki/Nu_(Interjektion))
 
-To build the css, make sure to install sass and then simply execute `build.sh`.
+## Getting started
+
+Nu is built with Sass. Execute `build.sh` to compile the code to a single CSS file.

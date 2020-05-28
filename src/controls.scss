@@ -1,0 +1,24 @@
+@use 'variables';
+
+button {
+    // Position text appropriately
+    padding: 1% 2.5% 1% 2.5%;
+
+    // Needs colors other than default
+    background-color: variables.$control-bg-color;
+    color: variables.$control-fg-color;
+
+    // Font
+    font-size: variables.$font-size;
+
+    // Border
+    border-radius: .6em;
+    border-style: solid;
+    border-color: variables.$control-active-color;
+    border-width: 3px;
+}
+
+button:hover {
+    background-color: variables.$control-active-color;
+    border-color: variables.$control-bg-color;
+}
