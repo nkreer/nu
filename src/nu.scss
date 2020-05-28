@@ -1,0 +1,22 @@
+// Import features
+@use 'variables';
+
+body, header, article, footer {
+    margin-top: variables.$top-margin;
+    margin-bottom: variables.$bottom-margin;
+    margin-left: 5%;
+    margin-right: 5%;
+    font: 100% variables.$basic-fonts;
+
+    // Color settings
+    background-color: variables.$background-color;
+    color: variables.$foreground-color-text;
+}
+
+article {
+    line-height: 1.5em;
+}
+
+h1 {
+    margin-bottom: 0;
+}
